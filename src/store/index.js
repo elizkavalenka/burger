@@ -3,6 +3,7 @@ import categoryReducer from "./category/categorySlice";
 import productReducer from "./product/productSlice";
 import orderReducer, { localStorageMiddleware } from "./order/orderSlice.js";
 import modalReducer from "./modalDelivery/modalDeliverySlice.js";
+import formReducer from "./form/formSlice.js";
 
 export const store = configureStore({
     reducer: {
@@ -10,6 +11,8 @@ export const store = configureStore({
         product: productReducer,
         order: orderReducer,
         modal: modalReducer,
+        form: formReducer,
+
     },
 
     middleware: getDefaultMiddleware => 
